@@ -1,0 +1,19 @@
+<!-- ********************* three extra header div starts ******************** -->
+
+<section class="header-extradiv">
+    <div class="container">
+        <div class="row">
+
+            <div *ngFor="let item of headerExtraList" class="extradiv col-lg-4 col-md-4 col-12">
+                <a href="#">
+                    <i class="fa-3x fa fa-{{item.iconName}}"></i>
+                </a>
+                <h2>{{item.title}}</h2>
+                <p>{{item.description}} </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ********************* three extra header div starts ******************** -->

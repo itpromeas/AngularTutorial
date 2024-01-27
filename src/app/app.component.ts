@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MyFirstAngularApp';
+  welcome = 'This is an Ecommerce';
+
+  categories = [
+    {
+      name: "Laptops"
+    },
+    {
+      name: "Women"
+    },
+    {
+      name: "Children"
+    },
+    {
+      name: "Men"
+    },
+    {
+      name: "Restaurant"
+    }
+  ];
 }

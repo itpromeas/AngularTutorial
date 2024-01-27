@@ -1,0 +1,46 @@
+<!-- ********************* foter starts ****************************** -->
+
+<footer class="footersection" id="footerdiv">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 footer-div">
+          <div>
+            <h3>ABOUT ANIWEB</h3>
+            <p>The world has become so fast paced that people don't want to stand by reading a page of information to be they would much rather look at a presentstion and understand the message.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 footer-div">
+          <div class="footer-navlinks">
+            <h3>NAVIGATION LINKS</h3>
+            <li *ngFor="let title of headerTitles"><a href="{{title.href}}">{{title.name}}</a></li>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12 footer-div">
+          <div>
+            <h3>NEWSLETTER</h3>
+            <p>For business professionals caught between high OEM price and mediocre print and graphic output.</p>
+            <div class="container newsletter-main">
+              <div class="row">
+                <div class="col-lg-12 col-12 ">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control newsletter-input" placeholder="Your Email">
+                    <div class="input-group-append">
+                      <span class="input-group-text">Subscribe</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        <p>{{copyR.author}} {{copyR.description}} {{copyR.authorLink}}</p>
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ********************* footer ends ****************************** -->
