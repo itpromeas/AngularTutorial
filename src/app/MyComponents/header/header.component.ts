@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,8 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  headerTitles!: any;
 
-  headerTitles = [
+  /*headerTitles = [
     {
       id: 1,
       name: "home",
@@ -41,7 +43,15 @@ export class HeaderComponent {
       name: "Shops",
       href: "#shops"
     },
-  ];
+  ];*/
+
+  constructor(private goToBackEnd: HttpClient){
+
+    goToBackEnd.post("http://localhost:8080/header-title/create", "").subscribe((response)=>{
+      console.log(response);
+      this.headerTitles = response
+    });
+  }
 
   
 }
